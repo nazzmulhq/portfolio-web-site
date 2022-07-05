@@ -1,5 +1,14 @@
 import bcrypt from 'bcryptjs';
-import { BeforeCreate, Column, DataType, Model, Table } from 'sequelize-typescript';
+import {
+    BeforeCreate,
+    BelongsTo,
+    Column,
+    DataType,
+    ForeignKey,
+    Model,
+    Table
+} from 'sequelize-typescript';
+import Profile from './Profile';
 
 @Table({ tableName: 'user', paranoid: true })
 export default class User extends Model<User> {
@@ -17,6 +26,13 @@ export default class User extends Model<User> {
 
     @Column({ allowNull: false, type: DataType.STRING(2048) })
     password!: string;
+
+    @ForeignKey(() => Profile)
+    @Column({ type: DataType.INTEGER, allowNull: true, unique: true })
+    profileId!: number;
+
+    @BelongsTo(() => Profile)
+    profile!: Profile;
 
     @BeforeCreate
     static hashPassword = (instance: User) => {
