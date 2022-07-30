@@ -1,4 +1,5 @@
 import { Collapse } from 'antd';
+import Icons from 'components/icon';
 
 type TCard = {
 	header: {
@@ -14,7 +15,24 @@ type TCard = {
 const Cards = <T extends TCard>({ header, list }: T) => {
 	return (
 		<div>
-			<Collapse accordion ghost bordered={false} expandIcon={() => header.icon} expandIconPosition='end'>
+			<Collapse
+				accordion
+				bordered={true}
+				ghost
+				className='hade'
+				expandIcon={(panelProps): JSX.Element => (
+					<Icons.RightArrow
+						height={15}
+						width={15}
+						fill='gray'
+						style={
+							panelProps.isActive
+								? { transform: 'rotate(90deg)', marginTop: '-6px', transitionDuration: '0.3s' }
+								: { transitionDuration: '0.3s' }
+						}
+					/>
+				)}
+				expandIconPosition='end'>
 				<Collapse.Panel
 					header={
 						<div className='header'>

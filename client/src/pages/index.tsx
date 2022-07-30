@@ -25,7 +25,7 @@ const profile = {
 			title: 'Skill'
 		},
 		list: {
-			icon: <Icons.Star height={35} width={35} />,
+			icon: <Icons.Star height={20} width={20} />,
 			listOfSkills: [
 				'React',
 				'NodeJS',

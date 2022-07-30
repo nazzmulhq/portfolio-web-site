@@ -5,6 +5,7 @@ import { ReactComponent as Me } from 'assets/icons/me.svg';
 import { ReactComponent as Object } from 'assets/icons/object.svg';
 import { ReactComponent as Project } from 'assets/icons/project.svg';
 import { ReactComponent as Ref } from 'assets/icons/ref.svg';
+import { ReactComponent as RightArrow } from 'assets/icons/right-arrow.svg';
 import { ReactComponent as Skill } from 'assets/icons/skill.svg';
 import { ReactComponent as Star } from 'assets/icons/star.svg';
 
@@ -17,7 +18,8 @@ const Icons = {
 	Project,
 	Ref,
 	Skill,
-	Star
+	Star,
+	RightArrow
 };
 
 export default Icons;

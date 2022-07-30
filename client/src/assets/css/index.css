@@ -1,20 +1,20 @@
+@import '~antd/dist/antd.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '~antd/dist/antd.css';
-
 
 .app {
     @apply m-6;
 }
 
 .ant-collapse-header {
-    @apply mx-4 border-2 rounded-lg border-spacing-4  shadow-sm;
+    @apply border-4 rounded-2xl shadow-sm;
 }
 
 .ant-collapse-header-text {
     @apply ml-4 text-3xl font-semibold;
 }
+
 
 .header{
     @apply flex items-center space-x-5;
@@ -29,7 +29,7 @@
 }
 
 .list{
-    @apply pl-96 flex items-center;
+    @apply pl-80 flex items-center;
 }
 
 .list-item{
