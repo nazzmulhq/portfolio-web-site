@@ -2,8 +2,9 @@ import { Router } from 'express';
 import UserController from '../controllers/UserController';
 
 class UserRoute {
-    private path = '/user';
     public router = Router();
+
+    private path = '/user';
 
     constructor() {
         this.init();

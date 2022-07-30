@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '~antd/dist/antd.css';
+
+
+.app {
+    @apply m-6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ant-collapse-header {
+    @apply mx-4 border-2 rounded-lg border-spacing-4  shadow-sm;
 }
+
+.ant-collapse-header-text {
+    @apply ml-4 text-3xl font-semibold;
+}
+
+.header{
+    @apply flex items-center space-x-5;
+}
+
+.center{
+    @apply m-4 p-4 text-center;
+}
+
+.card{
+    @apply grid grid-cols-2 gap-2 justify-center items-center;
+}
+
+.list{
+    @apply pl-96 flex items-center;
+}
+
+.list-item{
+    @apply pl-4 text-xl font-semibold;
+}
+

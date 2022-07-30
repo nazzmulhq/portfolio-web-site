@@ -5,14 +5,21 @@ import { RouterT } from './types';
 import loader from './utils/loader';
 
 export default class App {
-    private PORT: number;
     public app: Application;
+
+    private readonly PORT: number;
 
     constructor(PORT: number, routers: RouterT[]) {
         this.PORT = PORT;
         this.app = express();
         this.initMiddlewares();
         this.initRouters(routers);
+    }
+
+    public listen() {
+        this.app.listen(this.PORT, () => {
+            console.log(`Server listening on port ${this.PORT}`);
+        });
     }
 
     private initMiddlewares() {
@@ -24,11 +31,5 @@ export default class App {
 
     private initRouters(routers: RouterT[]) {
         routers.forEach(({ router }) => this.app.use('/', router));
-    }
-
-    public listen() {
-        this.app.listen(this.PORT, () => {
-            console.log(`Server listening on port ${this.PORT}`);
-        });
     }
 }

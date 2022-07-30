@@ -16,4 +16,6 @@ export default class ProfileController {
         });
         return res.status(201).json(profile);
     };
+
+    static updateProfile = async (req: Request, res: Response) => {};
 }

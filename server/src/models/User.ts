@@ -5,14 +5,21 @@ import {
     Column,
     DataType,
     ForeignKey,
+    HasMany,
     Model,
     Table
 } from 'sequelize-typescript';
 import Profile from './Profile';
+import Skill from './Skill';
 
 @Table({ tableName: 'user', paranoid: true })
 export default class User extends Model<User> {
-    @Column({ type: DataType.INTEGER, primaryKey: true, autoIncrement: true, unique: true })
+    @Column({
+        type: DataType.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        unique: true
+    })
     id!: number;
 
     @Column({ type: DataType.STRING, allowNull: true })
@@ -33,6 +40,12 @@ export default class User extends Model<User> {
 
     @BelongsTo(() => Profile)
     profile!: Profile;
+
+    @ForeignKey(() => Skill)
+    skillId!: number;
+
+    @HasMany(() => Skill)
+    skill!: Profile;
 
     @BeforeCreate
     static hashPassword = (instance: User) => {

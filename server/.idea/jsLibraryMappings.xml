@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$USER_HOME$/.yarn/bin" libraries="{@types/eslint, @types/eslint-config-prettier, @types/eslint-plugin-markdown, @types/eslint-plugin-prettier, @types/eslint-scope, @types/eslint-utils, @types/eslint-visitor-keys, @types/prettier, Node.js Core}" />
+    <excludedPredefinedLibrary name="HTML" />
+  </component>
+</project>

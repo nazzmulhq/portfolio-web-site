@@ -2,8 +2,9 @@ import { Router } from 'express';
 import ProfileController from '../controllers/ProfileController';
 
 class ProfileRoute {
-    private path = '/profile';
     public router = Router();
+
+    private path = '/profile';
 
     constructor() {
         this.init();
@@ -12,7 +13,8 @@ class ProfileRoute {
     private init = () => {
         this.router
             .get(this.path, ProfileController.getProfile)
-            .post(this.path, ProfileController.createProfile);
+            .post(this.path, ProfileController.createProfile)
+            .put(this.path, ProfileController.updateProfile);
     };
 }
 

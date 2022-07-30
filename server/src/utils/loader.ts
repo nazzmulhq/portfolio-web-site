@@ -1,14 +1,8 @@
 import dayjs from 'dayjs';
 import morgan from 'morgan';
 
-// create a rotating write stream
-// const accessLogStream = rfs.createStream('access.log', {
-//     interval: '1d', // rotate daily
-//     path: path.join(__dirname, '../')
-// });
-
-// const accessLogStream = fs.createWriteStream(path.join("./access.log"), {
-//   flags: "a",
+// const accessLogStream = fs.createWriteStream(path.join('./access.log'), {
+//     flags: 'a'
 // });
 
 export default function loader() {
@@ -23,7 +17,10 @@ export default function loader() {
                 tokens.res(req, res, 'content-length'),
                 tokens['response-time'](req, res),
                 'ms'
-            ].join(' ')
-        // { stream: accessLogStream }
+            ].join(' '),
+        {
+            // stream: accessLogStream
+            // skip: (req, res) => res.statusCode < 400
+        }
     );
 }
