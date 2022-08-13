@@ -5,7 +5,7 @@ type TSkill = {
 	other: string[];
 };
 
-export default function Skill<T extends TSkill>({ title, language, libraryOrFramework, other }: T) {
+export default function Skill<T extends TSkill>({ language, libraryOrFramework, other }: T) {
 	return (
 		<div
 			className={` bg-white rounded-lg transform transition-opacity

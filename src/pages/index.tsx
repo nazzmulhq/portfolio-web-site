@@ -1,5 +1,4 @@
 import pic from 'assets/n.jpg';
-import AcademicRecords from 'components/academicRecords';
 import Experience from 'components/experience';
 import Profile from 'components/profile';
 import Skill from 'components/skill';
@@ -12,7 +11,7 @@ const Home = () => {
 			</div>
 			<div className='sm:w-full md:w-2/3 space-y-4'>
 				<Experience experience={profile.experience} />
-				<AcademicRecords />
+				{/* <AcademicRecords /> */}
 			</div>
 		</div>
 	);
