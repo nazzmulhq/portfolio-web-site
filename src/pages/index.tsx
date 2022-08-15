@@ -48,21 +48,21 @@ const profile = {
 	},
 	experience: [
 		{
-			companyName: 'mPower Social Enterprises Limited',
+			'Company Name': 'mPower Social Enterprises Limited',
 			designation: 'Software Engineer',
-			companyLocation: 'Level 10 House 77, Nur Empori, Road 11 Banani Bridge',
+			'company Location': 'Level 10 House 77, Nur Empori, Road 11 Banani Bridge',
 			period: 'React Developer ( November 9, 2021 - Continuing)'
 		},
 		{
-			companyName: 'ROTechs Ltd',
+			'company Name': 'ROTechs Ltd',
 			designation: 'Software Engineer',
-			companyLocation: '25/1, Kabi Jasimuddin Road, North Kamlapur.',
+			'company Location': '25/1, Kabi Jasimuddin Road, North Kamlapur.',
 			period: 'Backend Development - ERP ( February 1, 2021 - May 31, 2021)'
 		},
 		{
-			companyName: 'Daffodil International University CPC Club',
+			'company Name': 'Daffodil International University CPC Club',
 			designation: 'Jr. Software Engineer',
-			companyLocation: '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
+			'company Location': '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
 			period: 'Backend Development ( September 7, 2020 - January 31, 2021)'
 		}
 	],
