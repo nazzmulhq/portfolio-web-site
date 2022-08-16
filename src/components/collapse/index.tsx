@@ -7,7 +7,7 @@ type TCollapse = {
 };
 
 export default function Collapse<T extends TCollapse>({ title, children }: T) {
-	const [isCollapse, setIsCollapse] = useState(false);
+	const [isCollapse, setIsCollapse] = useState(true);
 	const onClick = () => {
 		setIsCollapse(!isCollapse);
 	};
@@ -15,7 +15,10 @@ export default function Collapse<T extends TCollapse>({ title, children }: T) {
 	return (
 		<div className='mb-6'>
 			<div onClick={onClick}>
-				<div className='bg-white rounded-lg shadow-sm cursor-pointer'>
+				<div
+					className={`bg-white rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg ${
+						isCollapse && 'rounded-bl-none rounded-br-none'
+					}  shadow-sm hover:shadow-md cursor-pointer`}>
 					<div className='px-3 py-3 flex items-center justify-between '>
 						<p className='text-xl font-semibold'>{title}</p>
 						<Icons.RightArrow
@@ -26,8 +29,8 @@ export default function Collapse<T extends TCollapse>({ title, children }: T) {
 			</div>
 
 			<div
-				className={`bg-white rounded-lg shadow-sm transition-opacity delay-300 duration-500 ${
-					isCollapse ? 'mt-2 p-2 w-full opacity-100 h-auto' : 'h-0 w-0 opacity-0'
+				className={`bg-gray-50 rounded-br-lg rounded-bl-lg shadow-sm hover:shadow-md  transition-opacity delay-300 duration-500 ${
+					isCollapse ? 'p-2 w-full opacity-100 h-auto' : 'h-0 w-0 opacity-0'
 				}`}>
 				<div className={`${!isCollapse && 'hidden'}`}>{children}</div>
 			</div>

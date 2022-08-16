@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    @apply bg-indigo-100;
+
+
+@layer{
+    body{
+    @apply bg-indigo-100 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100;
+}
 }

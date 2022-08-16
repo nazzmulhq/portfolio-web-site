@@ -1,6 +1,6 @@
 import Collapse from 'components/collapse';
 import Icons from 'components/icon';
-import Item from './Item';
+import Item from '../Item';
 
 type TExperience = {
 	experience: {
@@ -17,7 +17,7 @@ export default function Experience<T extends TExperience>({ experience }: T) {
 						<div className='space-x-12'>
 							<div className='flex items-center'>
 								<Icons.Star className='h-6' />
-								<p className='pl-4 text-xl font-semibold'>{item.period}</p>
+								<p className='pl-4 text-xl font-semibold'>{item.title}</p>
 							</div>
 							<>
 								{Object.keys(item).map(key => {
