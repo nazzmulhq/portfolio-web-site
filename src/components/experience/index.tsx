@@ -21,6 +21,7 @@ export default function Experience<T extends TExperience>({ experience }: T) {
 							</div>
 							<>
 								{Object.keys(item).map(key => {
+									// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 									if (key !== 'period') return <Item name={key} value={item[key]!} />;
 								})}
 							</>
