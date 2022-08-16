@@ -6,11 +6,11 @@ import Skill from 'components/skill';
 const Home = () => {
 	return (
 		<div className='md:flex md:space-x-6'>
-			<div className='sm:w-full md:w-1/3 space-y-4'>
+			<div className='sm:w-full md:w-1/3 lg:w-1/4 space-y-4'>
 				<Profile {...profile.me} />
 				<Skill {...profile.skills} />
 			</div>
-			<div className='sm:w-full md:w-2/3 space-y-4'>
+			<div className='sm:w-full md:w-2/3 lg:w-3/4 space-y-4'>
 				<Experience experience={profile.experience} />
 				<AcademicRecords academic={profile.academic} />
 			</div>
