@@ -14,7 +14,7 @@ export default function AcademicRecords<T extends TAcademicRecords>({ academic }
 			<Collapse title='Academic Records'>
 				<div className='space-y-8 p-4'>
 					{academic.map(item => (
-						<div className='space-x-12'>
+						<div className='space-x-10'>
 							<div className='flex items-center'>
 								<Icons.Star className='h-6' />
 								<p className='pl-4 text-xl font-semibold'>{item.title}</p>

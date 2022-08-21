@@ -5,12 +5,14 @@ import Profile from 'components/profile';
 import Skill from 'components/skill';
 const Home = () => {
 	return (
-		<div className='md:flex md:space-x-6'>
-			<div className='sm:w-full md:w-1/3 lg:w-1/4 space-y-4'>
+		<div className='lg:flex lg:space-x-6'>
+			<div className='sm:w-full lg:w-1/4'>
 				<Profile {...profile.me} />
+				<br />
 				<Skill {...profile.skills} />
 			</div>
-			<div className='sm:w-full md:w-2/3 lg:w-3/4 space-y-4'>
+			<br />
+			<div className='sm:w-full lg:w-3/4'>
 				<Experience experience={profile.experience} />
 				<AcademicRecords academic={profile.academic} />
 			</div>
@@ -51,34 +53,34 @@ const profile = {
 		{
 			'Company Name': 'mPower Social Enterprises Limited',
 			designation: 'Software Engineer',
-			'company Location': 'Level 10 House 77, Nur Empori, Road 11 Banani Bridge',
-			title: 'React Developer ( November 9, 2021 - Continuing)'
+			'company Location': 'Level 10 House 77, Nur Empori, Road 11 Banani',
+			title: 'React Developer'
 		},
 		{
 			'company Name': 'ROTechs Ltd',
 			designation: 'Software Engineer',
 			'company Location': '25/1, Kabi Jasimuddin Road, North Kamlapur.',
-			title: 'Backend Development - ERP ( February 1, 2021 - May 31, 2021)'
+			title: 'Backend Development - ERP'
 		},
 		{
 			'company Name': 'Daffodil International University CPC Club',
 			designation: 'Jr. Software Engineer',
 			'company Location': '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
-			title: 'Backend Development ( September 7, 2020 - January 31, 2021)'
+			title: 'Backend Development'
 		}
 	],
 	academic: [
 		{
-			degree: 'B.Sc. in Computer Science & Engineering',
-			title: 'B.Sc. in Computer Science & Engineering',
+			degree: 'Bachelor of Science (B.Sc.)',
+			title: 'Computer Science & Engineering (CSE)',
 			instituteName: 'Daffodil International University',
 			department: 'Computer Science & Engineering',
 			durationOfCourse: 'Four Years',
 			passingYear: '2021'
 		},
 		{
-			degree: 'Diploma-in-Computer Engineering',
-			title: 'Diploma-in-Computer Engineering',
+			degree: 'Diploma',
+			title: 'Computer Engineering',
 			instituteName: 'Meherpur College of Engineering & Technology',
 			department: 'Computer Engineering',
 			durationOfCourse: 'Four Years',

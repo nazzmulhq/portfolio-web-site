@@ -9,9 +9,9 @@ export default function Skill<T extends TSkill>({ language, libraryOrFramework, 
 	return (
 		<div
 			className={` bg-white rounded-lg transform transition-opacity
-                delay-150 duration-500 p-3`}>
-			<p className='text-left text-lg font-semibold'>Language:</p>
-			<div className='grid  md:grid-cols-2  lg:grid-cols-4 gap-2'>
+                delay-150 duration-500 p-4`}>
+			<p className='text-left text-lg font-semibold mb-1'>Language:</p>
+			<div className='grid sm:grid-cols-3 md:grid-cols-4  lg:grid-cols-2 xl:grid-cols-4 gap-2 justify-center'>
 				{language.map(item => (
 					<span
 						key={item}
@@ -20,8 +20,8 @@ export default function Skill<T extends TSkill>({ language, libraryOrFramework, 
 					</span>
 				))}
 			</div>
-			<p className='text-left text-lg font-semibold'>Library/Framework:</p>
-			<div className='grid  md:grid-cols-2  lg:grid-cols-4 gap-2'>
+			<p className='text-left text-lg font-semibold mb-1 mt-3'>Library/Framework:</p>
+			<div className='grid  sm:grid-cols-3 md:grid-cols-4  lg:grid-cols-2 xl:grid-cols-4 gap-2'>
 				{libraryOrFramework.map(item => (
 					<span
 						key={item}
@@ -30,8 +30,8 @@ export default function Skill<T extends TSkill>({ language, libraryOrFramework, 
 					</span>
 				))}
 			</div>
-			<p className='text-left text-lg font-semibold'>Other:</p>
-			<div className='grid  md:grid-cols-2  lg:grid-cols-4 gap-2'>
+			<p className='text-left text-lg font-semibold mb-1 mt-3'>Other:</p>
+			<div className='grid   sm:grid-cols-3 md:grid-cols-4  lg:grid-cols-2 xl:grid-cols-4 gap-2'>
 				{other.map(item => (
 					<span
 						key={item}
