@@ -5,15 +5,17 @@ import Profile from 'components/profile';
 import Skill from 'components/skill';
 const Home = () => {
 	return (
-		<div className='lg:flex lg:space-x-6'>
-			<div className='sm:w-full lg:w-1/4'>
+		<div className='space-y-6'>
+			<div>
 				<Profile {...profile.me} />
-				<br />
+			</div>
+			<div>
 				<Skill {...profile.skills} />
 			</div>
-			<br />
-			<div className='sm:w-full lg:w-3/4'>
+			<div>
 				<Experience experience={profile.experience} />
+			</div>
+			<div>
 				<AcademicRecords academic={profile.academic} />
 			</div>
 		</div>
@@ -32,7 +34,6 @@ const profile = {
 		email: 'nazmul2018s@gmail.com',
 		phone: '+88001917003822'
 	},
-
 	skills: {
 		title: 'Skill',
 		language: ['JavaScript', 'TypeScript', 'Python', 'HTML', 'CSS'],
@@ -51,21 +52,21 @@ const profile = {
 	},
 	experience: [
 		{
-			'Company Name': 'mPower Social Enterprises Limited',
+			Name: 'mPower Social Enterprises Limited',
 			designation: 'Software Engineer',
-			'company Location': 'Level 10 House 77, Nur Empori, Road 11 Banani',
+			location: 'Level 10 House 77, Nur Empori, Road 11 Banani',
 			title: 'React Developer'
 		},
 		{
-			'company Name': 'ROTechs Ltd',
+			Name: 'ROTechs Ltd',
 			designation: 'Software Engineer',
-			'company Location': '25/1, Kabi Jasimuddin Road, North Kamlapur.',
+			location: '25/1, Kabi Jasimuddin Road, North Kamlapur.',
 			title: 'Backend Development - ERP'
 		},
 		{
-			'company Name': 'Daffodil International University CPC Club',
+			Name: 'Daffodil International University CPC Club',
 			designation: 'Jr. Software Engineer',
-			'company Location': '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
+			location: '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
 			title: 'Backend Development'
 		}
 	],
@@ -73,26 +74,26 @@ const profile = {
 		{
 			degree: 'Bachelor of Science (B.Sc.)',
 			title: 'Computer Science & Engineering (CSE)',
-			instituteName: 'Daffodil International University',
+			name: 'Daffodil International University',
 			department: 'Computer Science & Engineering',
-			durationOfCourse: 'Four Years',
-			passingYear: '2021'
+			duration: 'Four Years',
+			'Passing Year': '2021'
 		},
 		{
 			degree: 'Diploma',
 			title: 'Computer Engineering',
-			instituteName: 'Meherpur College of Engineering & Technology',
+			name: 'Meherpur College of Engineering & Technology',
 			department: 'Computer Engineering',
-			durationOfCourse: 'Four Years',
-			passingYear: '2017'
+			duration: 'Four Years',
+			'Passing Year': '2017'
 		},
 		{
 			degree: 'S.S.C',
 			title: 'S.S.C',
-			instituteName: 'Kobi Nazrul Shikkha Manzil',
+			name: 'Kobi Nazrul Shikkha Manzil',
 			department: 'Science',
-			durationOfCourse: 'Two Years',
-			passingYear: '2012'
+			duration: 'Two Years',
+			'Passing Year': '2012'
 		}
 	]
 };

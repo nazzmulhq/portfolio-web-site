@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 
+@layer components {
+    .title{
+        
+    }
+}
 
-@layer{
+@layer base{
     body{
-    @apply bg-indigo-100 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100;
+        @apply bg-gray-700 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100;
+    }  
 }
-}
+
+@layer utilities {}
