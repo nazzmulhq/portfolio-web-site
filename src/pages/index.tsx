@@ -1,6 +1,5 @@
 import pic from 'assets/n.jpg';
-import AcademicRecords from 'components/academicRecords';
-import Experience from 'components/experience';
+import Item from 'components/Item';
 import Profile from 'components/profile';
 import Skill from 'components/skill';
 const Home = () => {
@@ -13,10 +12,10 @@ const Home = () => {
 				<Skill {...profile.skills} />
 			</div>
 			<div>
-				<Experience experience={profile.experience} />
+				<Item title='Experience' items={profile.experience} />
 			</div>
 			<div>
-				<AcademicRecords academic={profile.academic} />
+				<Item title='Academic Records' items={profile.academic} />
 			</div>
 		</div>
 	);

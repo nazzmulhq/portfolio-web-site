@@ -1,21 +1,35 @@
-import Icons from 'components/icon';
+import Collapse from './collapse';
+import Icons from './icon';
+import SubItem from './SubItem';
 
 type TItem = {
-	name: string;
-	value: string;
+	title: string;
+	items: {
+		[key: string]: string | undefined;
+	}[];
 };
 
-export default function Item<T extends TItem>({ name, value }: T) {
+export default function Item<T extends TItem>({ title, items }: T) {
 	return (
-		<div className='flex items-center'>
-			<div className='flex items-center sm:w-1/2 md:w-1/3 lg:w-1/4 2xl:w-1/6'>
-				<Icons.RightArrow className='h-4' />
-				<p className='sm:pl-1 md:pl-4 sm:text-xs md:text-base font-semibold capitalize'>{name}</p>
-			</div>
-			<div className='flex items-center sm:w-1/2 md:w-2/3 lg:w-3/4 2xl:w-5/6'>
-				<p className='text-base font-semibold w-1/12'>:</p>
-				<p className='md:pl-4 sm:text-xs md:text-base font-medium w-11/12'>{value}</p>
-			</div>
+		<div>
+			<Collapse title={title}>
+				<div className='sm:space-y-2 md:space-y-4 md:p-4'>
+					{items.map(item => (
+						<div className='md:space-x-10'>
+							<div className='flex items-center'>
+								<Icons.Star className='sm:h-4 md:h-6' />
+								<p className='sm:pl-2 md:pl-4 sm:text-base md:text-lg font-semibold'>{item.title}</p>
+							</div>
+							<>
+								{Object.keys(item).map(key => {
+									// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+									if (key !== 'period') return <SubItem name={key} value={item[key]!} />;
+								})}
+							</>
+						</div>
+					))}
+				</div>
+			</Collapse>
 		</div>
 	);
 }
