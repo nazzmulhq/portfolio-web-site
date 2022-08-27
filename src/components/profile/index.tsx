@@ -9,11 +9,11 @@ type TProfile = {
 
 const Profile = <T extends TProfile>({ pic, name, address, email, phone, position }: T) => {
 	return (
-		<div className='bg-white rounded-lg relative'>
+		<div className='bg-gradient-custom shadow-md rounded-lg relative'>
 			<img
 				src={pic}
 				alt=''
-				className='w-40 absolute right-0 left-0 -top-1/3 rounded-full mx-auto ring-8 ring-gray-700 border-8 border-white'
+				className='w-40 absolute right-0 left-0 -top-1/3 rounded-full mx-auto ring-8 ring-indigo-100 border-8 border-white'
 			/>
 			<div className='p-4 space-y-2 mt-28'>
 				<div className='text-center space-y-1 mt-20'>
@@ -26,7 +26,7 @@ const Profile = <T extends TProfile>({ pic, name, address, email, phone, positio
 						<a
 							href='https://drive.google.com/file/d/197Ex2HTQ5y0M-KJLavcJtYmcvewHhKR9/view?usp=sharing'
 							target='_blank'
-							className='my-2 px-4 py-1 text-xs text-center font-bold text-gray-500  border-2 border-gray-400 rounded-lg cursor-pointer hover:bg-gray-700 hover:text-gray-100'>
+							className='my-2 px-4 py-1 text-xs text-center font-bold text-gray-500  border border-gray-400 rounded-lg cursor-pointer hover:bg-indigo-100'>
 							Download CV
 						</a>
 					</div>
@@ -37,7 +37,7 @@ const Profile = <T extends TProfile>({ pic, name, address, email, phone, positio
 };
 export const ProfileLg = <T extends TProfile>({ pic, name, address, email, phone, position }: T) => {
 	return (
-		<div className='bg-white rounded-lg p-4'>
+		<div className='bg-gradient-custom shadow-md rounded-lg p-4'>
 			<img src={pic} alt='' className='w-40 rounded-full mx-auto border-8 border-white' />
 			<div className='px-4 py-1'>
 				<div className='text-center space-y-1'>
@@ -50,7 +50,7 @@ export const ProfileLg = <T extends TProfile>({ pic, name, address, email, phone
 						<a
 							href='https://drive.google.com/file/d/197Ex2HTQ5y0M-KJLavcJtYmcvewHhKR9/view?usp=sharing'
 							target='_blank'
-							className='my-2 px-4 py-1 text-xs text-center font-bold text-gray-500  border-2 border-gray-400 rounded-lg cursor-pointer hover:bg-gray-700 hover:text-gray-100'>
+							className='my-2 px-4 py-1 text-xs text-center font-bold text-gray-500  border border-gray-400 rounded-lg cursor-pointer hover:bg-indigo-100 '>
 							Download CV
 						</a>
 					</div>

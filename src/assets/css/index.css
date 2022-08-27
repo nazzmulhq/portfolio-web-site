@@ -9,8 +9,20 @@
 
 @layer base{
     body{
-        @apply bg-gray-700 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100;
+        
+        @apply bg-indigo-100 w-screen scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100;
     }  
 }
 
-@layer utilities {}
+@layer utilities {
+    .title{
+        @apply bg-gray-700
+    }
+    .title-text{
+        @apply text-gray-100 fill-slate-100
+    }
+    .bg-gradient-custom{
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+    }
+}
