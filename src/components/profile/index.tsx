@@ -35,5 +35,29 @@ const Profile = <T extends TProfile>({ pic, name, address, email, phone, positio
 		</div>
 	);
 };
+export const ProfileLg = <T extends TProfile>({ pic, name, address, email, phone, position }: T) => {
+	return (
+		<div className='bg-white rounded-lg p-4'>
+			<img src={pic} alt='' className='w-40 rounded-full mx-auto border-8 border-white' />
+			<div className='px-4 py-1'>
+				<div className='text-center space-y-1'>
+					<p className='text-3xl text-gray-700 font-bold'>{name}</p>
+					<p className='text-xl text-gray-500 font-bold'>{position}</p>
+					<p className='text-sm text-gray-500 font-bold'>{address}</p>
+					<p className='text-xs text-gray-500 font-bold'>{email}</p>
+					<p className='text-xs text-gray-500 font-bold'>{phone}</p>
+					<div>
+						<a
+							href='https://drive.google.com/file/d/197Ex2HTQ5y0M-KJLavcJtYmcvewHhKR9/view?usp=sharing'
+							target='_blank'
+							className='my-2 px-4 py-1 text-xs text-center font-bold text-gray-500  border-2 border-gray-400 rounded-lg cursor-pointer hover:bg-gray-700 hover:text-gray-100'>
+							Download CV
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
 
 export default Profile;

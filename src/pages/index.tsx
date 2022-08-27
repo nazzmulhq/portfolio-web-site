@@ -1,14 +1,17 @@
 import pic from 'assets/n.jpg';
 import Item from 'components/Item';
-import Profile from 'components/profile';
+import Profile, { ProfileLg } from 'components/profile';
 import About from 'components/profile/About';
 import Skill from 'components/skill';
 const Home = () => {
 	return (
 		<div className='space-y-6'>
-			<div className='sm:space-y-6 md:space-y-6 lg:flex lg:space-x-6'>
-				<div className='lg:w-1/3'>
+			<div className='sm:space-y-6 md:space-y-6 lg:flex'>
+				<div className='lg:w-1/3 lg:hidden '>
 					<Profile {...profile.me} />
+				</div>
+				<div className='sm:hidden lg:block lg:w-1/3 lg:mr-6'>
+					<ProfileLg {...profile.me} />
 				</div>
 				<div className='lg:w-2/3 '>
 					<About />
