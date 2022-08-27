@@ -48,7 +48,7 @@ export const ProfileLg = <T extends TProfile>({ pic, name, address, email, phone
 					<p className='text-xs text-gray-500 font-bold'>{phone}</p>
 					<div>
 						<a
-							href='https://drive.google.com/file/d/197Ex2HTQ5y0M-KJLavcJtYmcvewHhKR9/view?usp=sharing'
+							href='https://drive.google.com/file/d/1BbYVpVDnFBz7aET4P14RQZO1OaB4Xyjt/view?usp=sharing'
 							target='_blank'
 							className='my-2 px-4 py-1 text-xs text-center font-bold text-gray-500  border border-gray-400 rounded-lg cursor-pointer hover:bg-indigo-100 '>
 							Download CV
