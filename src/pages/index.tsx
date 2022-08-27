@@ -47,6 +47,8 @@ const profile = {
 		language: ['JavaScript', 'TypeScript', 'Python', 'HTML', 'CSS'],
 		libraryOrFramework: [
 			'React',
+			'Redux',
+			'Redux Thunk',
 			'NodeJS',
 			'ExpressJS',
 			'Django',
