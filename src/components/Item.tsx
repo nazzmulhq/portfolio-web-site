@@ -12,7 +12,7 @@ type TItem = {
 export default function Item<T extends TItem>({ title, items }: T) {
 	return (
 		<div>
-			<Collapse title={title}>
+			<Collapse isCollapse={false} title={title}>
 				<div className='sm:space-y-2 md:space-y-4 md:p-4'>
 					{items.map(item => (
 						<div className='md:space-x-10'>

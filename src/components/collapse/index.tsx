@@ -4,10 +4,11 @@ import { useState } from 'react';
 type TCollapse = {
 	title: string;
 	children: JSX.Element;
+	isCollapse: boolean;
 };
 
-export default function Collapse<T extends TCollapse>({ title, children }: T) {
-	const [isCollapse, setIsCollapse] = useState(true);
+export default function Collapse<T extends TCollapse>({ title, children, isCollapse: collapse }: T) {
+	const [isCollapse, setIsCollapse] = useState(collapse);
 	const onClick = () => {
 		setIsCollapse(!isCollapse);
 	};
