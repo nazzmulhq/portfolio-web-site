@@ -23,7 +23,7 @@ export default function Item<T extends TItem>({ title, items }: T) {
 							<>
 								{Object.keys(item).map(key => {
 									// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-									if (key !== 'period') return <SubItem name={key} value={item[key]!} />;
+									if (key !== 'title') return <SubItem name={key} value={item[key]!} />;
 								})}
 							</>
 						</div>

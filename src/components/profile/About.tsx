@@ -3,7 +3,7 @@ import Collapse from 'components/collapse';
 export default function About() {
 	return (
 		<Collapse isCollapse={window.innerWidth >= 1024} title='About Me'>
-			<div className='p-4 text-justify  text-gray-500  lg:h-[290px] overflow-auto scrollbar-none'>
+			<div className='p-4 text-justify  text-gray-500  lg:h-[290px] overflow-auto scrollbar-none sm:h-80 md:h-full'>
 				I have earned a Bachelor’s degree in Computer Science & Engineering. My studies centered on mathematics,
 				web design, database management, coding, and programming software used to create websites. I am
 				proficient in HTML and I have a basic knowledge of several scripting languages, structured programming

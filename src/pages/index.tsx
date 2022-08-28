@@ -24,6 +24,9 @@ const Home = () => {
 				<Item title='Experience' items={profile.experience} />
 			</div>
 			<div>
+				<Item title='Projects' items={profile.projects} />
+			</div>
+			<div>
 				<Item title='Academic Records' items={profile.academic} />
 			</div>
 		</div>
@@ -53,7 +56,6 @@ const profile = {
 			'ExpressJS',
 			'Django',
 			'MongoDB',
-			'Mongoose',
 			'Ant Design',
 			'Material UI',
 			'Tailwind CSS'
@@ -78,6 +80,38 @@ const profile = {
 			designation: 'Jr. Software Engineer',
 			location: '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
 			title: 'Backend Development'
+		}
+	],
+	projects: [
+		{
+			title: 'Shufola',
+			link: 'http://shufola-v2.dev.mpower-social.com/',
+			used: 'React, Redux, Node and Express',
+			duty: 'I am working alone on this project and working as frontend developer in this project. Communication with the project manager while working on the project. Requirements analysis and responsive design determining the structure and design of web pages,building reusable codes, optimizing page loading times, and using a variety of markup languages to create the project.'
+		},
+		{
+			title: 'Chakrisheba',
+			link: 'https://jobportal.yes-activity.com/',
+			used: 'React, Redux, Python and Django',
+			duty: 'I am working alone on this project and working as frontend developer in this project. Communication with the project manager while working on the project. Requirements analysis and responsive design determining the structure and design of web pages,building reusable codes, optimizing page loading times, and using a variety of markup languages to create the project.'
+		},
+		{
+			title: 'BMGF',
+			link: 'http://bmgf.dev.mpower-social.com/',
+			used: 'React, Redux, Python and Django',
+			duty: 'I am working alone on this project and working as frontend developer in this project. Communication with the project manager while working on the project. Requirements analysis and responsive design determining the structure and design of web pages,building reusable codes, optimizing page loading times, and using a variety of markup languages to create the project.'
+		},
+		{
+			title: 'Muzzle',
+			link: 'http://muzzle.dev.mpower-social.com/',
+			used: 'React, Redux, Node and Express',
+			duty: 'I am working alone on this project and working as frontend developer in this project.Communication with the project manager while working on the project. Requirements analysis and responsive design determining the structure and design of web pages,building reusable codes, optimizing page loading times, and using a variety of markup languages to create the project.'
+		},
+		{
+			title: 'Dashboard Library',
+			link: '"dashboardvisualization" in npm package',
+			used: 'React, Redux',
+			duty: 'I am working alone on this project and working as frontend developer in this project. Communication with the project manager while working on the project. Requirements analysis and responsive design determining the structure and design of web pages,building reusable codes, optimizing page loading times, and using a variety of markup languages to create the project.'
 		}
 	],
 	academic: [
