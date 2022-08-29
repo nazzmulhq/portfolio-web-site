@@ -64,22 +64,22 @@ const profile = {
 	},
 	experience: [
 		{
-			Name: 'mPower Social Enterprises Limited - Continuing',
+			Name: 'mPower Social Enterprises Limited',
 			designation: 'Software Engineer',
 			location: 'Level 10 House 77, Nur Empori, Road 11 Banani',
-			title: 'React Developer'
+			title: 'React Developer - Continuing'
 		},
 		{
-			Name: 'ROTechs Ltd - (Feb 1, 2021 - Oct 31, 2021)',
+			Name: 'ROTechs Ltd',
 			designation: 'Software Engineer',
 			location: '25/1, Kabi Jasimuddin Road, North Kamlapur.',
-			title: 'Backend Development - ERP'
+			title: 'Backend Development - ERP - (Feb 1, 2021 - Oct 31, 2021)'
 		},
 		{
-			Name: 'DIU CPC Club - (Sept 1, 2020 - Jan 31, 2021)',
+			Name: 'Daffodil International University CPC Club',
 			designation: 'Jr. Software Engineer',
 			location: '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
-			title: 'Backend Development'
+			title: 'Backend Development - (Sept 1, 2020 - Jan 31, 2021)'
 		}
 	],
 	projects: [
