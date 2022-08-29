@@ -13,7 +13,7 @@ const Profile = <T extends TProfile>({ pic, name, address, email, phone, positio
 			<img
 				src={pic}
 				alt=''
-				className='w-40 absolute right-0 left-0 -top-1/3 rounded-full mx-auto ring-8 ring-gray-600 border-8 border-white'
+				className='w-40 absolute right-0 left-0 -top-1/3 rounded-full mx-auto ring-8 ring-gray-100 border-8 border-gray-300'
 			/>
 			<div className='p-4 space-y-2 mt-28'>
 				<div className='text-center space-y-1 mt-20'>
@@ -38,7 +38,7 @@ const Profile = <T extends TProfile>({ pic, name, address, email, phone, positio
 export const ProfileLg = <T extends TProfile>({ pic, name, address, email, phone, position }: T) => {
 	return (
 		<div className='bg-gradient-custom shadow-md rounded-lg p-4'>
-			<img src={pic} alt='' className='w-40 rounded-full mx-auto border-8 border-gray-600' />
+			<img src={pic} alt='' className='w-40 rounded-xl mx-auto border-4 border-gray-300' />
 			<div className='px-4 py-1'>
 				<div className='text-center space-y-1'>
 					<p className='text-3xl text-gray-700 font-bold'>{name}</p>

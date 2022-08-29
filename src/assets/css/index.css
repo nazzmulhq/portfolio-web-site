@@ -9,7 +9,7 @@
 
 @layer base{
     body{
-        @apply bg-gray-600 w-screen min-h-screen scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100;
+        @apply bg-gray-100 w-screen min-h-screen scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100;
     }  
 }
 
@@ -21,7 +21,7 @@
         @apply text-gray-800 fill-gray-800
     }
     .bg-gradient-custom{
-        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        @apply bg-white
 
     }
 }
