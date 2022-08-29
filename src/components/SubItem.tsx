@@ -16,7 +16,7 @@ export default function SubItem<T extends TSubItem>({ name, value }: T) {
 				Live Project Link
 			</a>
 		);
-	} else if (value.split('.').length > 2) {
+	} else if (name === 'duty') {
 		showValue = (
 			<p className='md:pl-4 sm:text-xs md:text-base font-medium w-11/12 lg:text-justify'>
 				{window.innerWidth >= 1000
