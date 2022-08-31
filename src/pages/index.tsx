@@ -6,7 +6,7 @@ import Skill from 'components/skill';
 const Home = () => {
 	return (
 		<div className='space-y-6'>
-			<div className='sm:space-y-6 md:space-y-6 lg:flex'>
+			<div className='sm:space-y-6 md:space-y-0 lg:flex'>
 				<div className='lg:w-1/3 lg:hidden '>
 					<Profile {...profile.me} />
 				</div>
