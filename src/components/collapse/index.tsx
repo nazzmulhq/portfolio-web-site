@@ -14,12 +14,12 @@ export default function Collapse<T extends TCollapse>({ title, children, isColla
 	};
 
 	return (
-		<div className='mb-6'>
+		<div className='lg:h-full'>
 			<div onClick={onClick}>
 				<div
 					className={`title rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg ${
 						isCollapse && 'rounded-bl-none rounded-br-none'
-					}  shadow-sm hover:shadow-md cursor-pointer`}>
+					}  shadow hover:shadow-md cursor-pointer`}>
 					<div className='px-3 py-3 flex items-center justify-between '>
 						<p className='title-text text-xl font-semibold'>{title}</p>
 						<Icons.RightArrow
