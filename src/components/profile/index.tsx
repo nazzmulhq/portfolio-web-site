@@ -9,11 +9,11 @@ type TProfile = {
 
 const Profile = <T extends TProfile>({ pic, name, address, email, phone, position }: T) => {
 	return (
-		<div className='bg-slate-700 shadow-md rounded-lg relative'>
+		<div className='bg-gray-700 shadow-md rounded-lg relative'>
 			<img
 				src={pic}
 				alt='Nazmul Pic'
-				className='w-40 absolute right-0 left-0 -top-1/3 rounded-full mx-auto ring-8 ring-gray-100 border-8 border-gray-300'
+				className='w-40 absolute right-0 left-0 -top-1/3 rounded-full mx-auto ring-8 ring-gray-100 border-8 border-gray-700'
 			/>
 			<div className='p-4 space-y-2 mt-28'>
 				<div className='text-center space-y-1 mt-20'>
