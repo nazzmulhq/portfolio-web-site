@@ -37,7 +37,7 @@ const Profile = <T extends TProfile>({ pic, name, address, email, phone, positio
 };
 export const ProfileLg = <T extends TProfile>({ pic, name, address, email, phone, position }: T) => {
 	return (
-		<div className='bg-slate-700 shadow-md rounded-xl p-4'>
+		<div className='bg-gray-700 shadow-md rounded-xl p-4'>
 			<img
 				src={pic}
 				alt='Nazmul Pic'
