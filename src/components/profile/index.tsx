@@ -9,14 +9,14 @@ type TProfile = {
 
 const Profile = <T extends TProfile>({ pic, name, address, email, phone, position }: T) => {
 	return (
-		<div className='bg-gray-700 shadow-md rounded-lg relative'>
+		<div className='pt-5 bg-gray-700 shadow-md rounded-lg '>
 			<img
 				src={pic}
 				alt='Nazmul Pic'
-				className='w-40 absolute right-0 left-0 -top-1/3 rounded-full mx-auto ring-8 ring-gray-100 border-8 border-gray-700'
+				className='profile-pic w-40 rounded-xl mx-auto ring-4 ring-gray-100 border-4 border-gray-700'
 			/>
-			<div className='p-4 space-y-2 mt-28'>
-				<div className='text-center space-y-1 mt-20'>
+			<div className='p-4 space-y-2'>
+				<div className='text-center space-y-1'>
 					<p className='text-3xl text-gray-100 font-bold'>{name}</p>
 					<p className='text-xl text-gray-300 font-bold'>{position}</p>
 					<p className='text-sm text-gray-300 font-bold'>{address}</p>
@@ -37,11 +37,11 @@ const Profile = <T extends TProfile>({ pic, name, address, email, phone, positio
 };
 export const ProfileLg = <T extends TProfile>({ pic, name, address, email, phone, position }: T) => {
 	return (
-		<div className='bg-gray-700 shadow-md rounded-xl p-4'>
+		<div className='bg-gray-700 shadow-md rounded-xl p-4 pt-5 '>
 			<img
 				src={pic}
 				alt='Nazmul Pic'
-				className='w-40 rounded-xl mx-auto border-4 border-transparent ring-2 ring-gray-100'
+				className='profile-pic w-40 rounded-xl mx-auto border-4 border-transparent ring-2 ring-gray-100'
 			/>
 			<div className='px-4 py-1'>
 				<div className='text-center space-y-1'>

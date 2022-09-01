@@ -1,5 +1,7 @@
 import { ReactComponent as Address } from 'assets/icons/address.svg';
+import { ReactComponent as BorderArrow } from 'assets/icons/border-arrow.svg';
 import { ReactComponent as Education } from 'assets/icons/education.svg';
+import { ReactComponent as Grid } from 'assets/icons/grid.svg';
 import { ReactComponent as Idea } from 'assets/icons/idea.svg';
 import { ReactComponent as Me } from 'assets/icons/me.svg';
 import { ReactComponent as Object } from 'assets/icons/object.svg';
@@ -19,7 +21,9 @@ const Icons = {
 	Ref,
 	Skill,
 	Star,
-	RightArrow
+	RightArrow,
+	BorderArrow,
+	Grid
 };
 
 export default Icons;

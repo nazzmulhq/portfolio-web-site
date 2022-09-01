@@ -13,7 +13,26 @@
     }  
 }
 
+@keyframes boxShadow {
+  0% {box-shadow: 0px 0px 6px 1px rgb(230, 173, 221);}
+  25% {box-shadow: 0px 0px 7px 1px rgb(226, 137, 199);}
+  50% {box-shadow: 0px 0px 8px 1px rgb(230, 69, 181);}
+  75% {box-shadow: 0px 0px 7px 1px rgb(226, 137, 199);}
+  100% {box-shadow: 0px 0px 6px 1px rgb(230, 173, 221);}
+}
+
+
+.profile-pic{
+    animation: boxShadow 5s both infinite;
+        
+}
+.profile-pic-sm{
+    animation: boxShadow 5s both infinite;
+        
+}
+
 @layer utilities {
+
     .title{
         @apply bg-gray-200
     }

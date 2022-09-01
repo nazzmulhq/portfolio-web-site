@@ -5,6 +5,7 @@ type TCollapse = {
 	title: string;
 	children: JSX.Element;
 	isCollapse: boolean;
+	icon?: React.SVGProps<SVGSVGElement>;
 };
 
 export default function Collapse<T extends TCollapse>({ title, children, isCollapse: collapse }: T) {
@@ -21,7 +22,11 @@ export default function Collapse<T extends TCollapse>({ title, children, isColla
 						isCollapse && 'rounded-bl-none rounded-br-none'
 					}  shadow hover:shadow-md cursor-pointer`}>
 					<div className='px-3 py-3 flex items-center justify-between '>
-						<p className='title-text text-xl font-semibold'>{title}</p>
+						<div className='flex items-center'>
+							<Icons.Grid className='h-8 w-8 title-text ml-1' />
+							<p className='title-text text-2xl font-semibold ml-4'>{title}</p>
+						</div>
+
 						<Icons.RightArrow
 							className={`w-4 title-text transform delay-100 duration-300 ${isCollapse && 'rotate-90'} `}
 						/>
