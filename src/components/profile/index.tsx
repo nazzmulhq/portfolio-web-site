@@ -24,7 +24,7 @@ const Profile = <T extends TProfile>({ pic, name, address, email, phone, positio
 					<p className='text-xs text-gray-300 font-bold'>{phone}</p>
 					<div>
 						<a
-							href='https://drive.google.com/file/d/1BbYVpVDnFBz7aET4P14RQZO1OaB4Xyjt/view?usp=sharing'
+							href='https://drive.google.com/file/d/1X9G6zSCYdrJtsWXMSzAVampis25XDnVY/view?usp=sharing'
 							target='_blank'
 							className='my-2 px-4 py-1 text-xs text-center font-bold text-gray-300  border border-gray-400 rounded-full cursor-pointer hover:bg-indigo-100 hover:text-gray-700'>
 							Download CV
@@ -52,7 +52,7 @@ export const ProfileLg = <T extends TProfile>({ pic, name, address, email, phone
 					<p className='text-xs text-gray-300 font-bold'>{phone}</p>
 					<div>
 						<a
-							href='https://drive.google.com/file/d/1BbYVpVDnFBz7aET4P14RQZO1OaB4Xyjt/view?usp=sharing'
+							href='https://drive.google.com/file/d/1X9G6zSCYdrJtsWXMSzAVampis25XDnVY/view?usp=sharing'
 							target='_blank'
 							className='my-2 px-4 py-1 text-xs text-center font-bold text-gray-300  border border-gray-400 rounded-full cursor-pointer hover:bg-indigo-100 hover:text-gray-700'>
 							Download CV

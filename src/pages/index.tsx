@@ -109,7 +109,7 @@ const profile = {
 		},
 		{
 			title: 'Dashboard Library',
-			link: '"dashboardvisualization" in npm package',
+			link: 'https://www.npmjs.com/package/dashboardvisualization',
 			used: 'React, Redux',
 			duty: 'I am working alone on this project and working as frontend developer in this project. Communication with the project manager while working on the project. Requirements analysis and responsive design determining the structure and design of web pages,building reusable codes, optimizing page loading times, and using a variety of markup languages to create the project.'
 		}
