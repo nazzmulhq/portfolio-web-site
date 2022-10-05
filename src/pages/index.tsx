@@ -74,13 +74,13 @@ const profile = {
 			Name: 'ROTechs Ltd',
 			designation: 'Software Engineer',
 			location: '25/1, Kabi Jasimuddin Road, North Kamlapur.',
-			title: 'Front-end Development - ERP - (Feb 1, 2021 - Oct 31, 2021)'
+			title: 'Front-end Developer - ERP - (Feb 1, 2021 - Oct 31, 2021)'
 		},
 		{
 			Name: 'Daffodil International University CPC Club',
 			designation: 'Jr. Software Engineer',
 			location: '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
-			title: 'Front-end Development - (Sept 1, 2020 - Jan 31, 2021)'
+			title: 'Front-end Developer - (Sept 1, 2020 - Jan 31, 2021)'
 		}
 	],
 	projects: [
