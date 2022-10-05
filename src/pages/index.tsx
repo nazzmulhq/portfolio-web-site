@@ -43,7 +43,8 @@ const profile = {
 		company: 'mPower Social Enterprises Ltd.',
 		address: 'Meherpur, Bangladesh',
 		email: 'nazmul2018s@gmail.com',
-		phone: '+88001917003822'
+		phone: '+88001917003822',
+		cvLink: 'https://drive.google.com/file/d/1K4G2HD4IGPkx-_5f5fSwnbgOS5QDZkfh/view?usp=sharing'
 	},
 	skills: {
 		title: 'Skill',
@@ -67,19 +68,19 @@ const profile = {
 			Name: 'mPower Social Enterprises Limited',
 			designation: 'Software Engineer',
 			location: 'Level 10 House 77, Nur Empori, Road 11 Banani',
-			title: 'React Developer - Continuing'
+			title: 'Front-end Developer - Continuing'
 		},
 		{
 			Name: 'ROTechs Ltd',
 			designation: 'Software Engineer',
 			location: '25/1, Kabi Jasimuddin Road, North Kamlapur.',
-			title: 'Backend Development - ERP - (Feb 1, 2021 - Oct 31, 2021)'
+			title: 'Front-end Development - ERP - (Feb 1, 2021 - Oct 31, 2021)'
 		},
 		{
 			Name: 'Daffodil International University CPC Club',
 			designation: 'Jr. Software Engineer',
 			location: '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
-			title: 'Backend Development - (Sept 1, 2020 - Jan 31, 2021)'
+			title: 'Front-end Development - (Sept 1, 2020 - Jan 31, 2021)'
 		}
 	],
 	projects: [
