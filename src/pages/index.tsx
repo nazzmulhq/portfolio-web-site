@@ -43,8 +43,8 @@ const profile = {
 		company: 'mPower Social Enterprises Ltd.',
 		address: 'Meherpur, Bangladesh',
 		email: 'nazmul2018s@gmail.com',
-		phone: '+88001917003822',
-		cvLink: 'https://drive.google.com/file/d/1K4G2HD4IGPkx-_5f5fSwnbgOS5QDZkfh/view?usp=sharing'
+		phone: '+8801917003822',
+		cvLink: 'https://drive.google.com/file/d/1RwPksyCYdcTo3xFFk2pQbElCpjRu0vDf/view?usp=share_link'
 	},
 	skills: {
 		title: 'Skill',
