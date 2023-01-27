@@ -65,10 +65,16 @@ const profile = {
 	},
 	experience: [
 		{
+			Name: 'Apsis Solutions Ltd',
+			designation: 'Software Engineer',
+			location: 'Ahmed Tower, 30 Kemal Ataturk Ave, Dhaka 1213',
+			title: 'Front-end Developer - Continuing'
+		},
+		{
 			Name: 'mPower Social Enterprises Limited',
 			designation: 'Software Engineer',
 			location: 'Level 10 House 77, Nur Empori, Road 11 Banani',
-			title: 'Front-end Developer - Continuing'
+			title: 'Front-end Developer - (November 9, 2021 - November 3, 2022)'
 		},
 		{
 			Name: 'ROTechs Ltd',
