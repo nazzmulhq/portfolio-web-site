@@ -51,10 +51,12 @@ const profile = {
 		language: ['JavaScript', 'TypeScript', 'Python', 'HTML', 'CSS'],
 		libraryOrFramework: [
 			'React',
+			'NextJS',
 			'Redux',
 			'Redux Thunk',
 			'NodeJS',
 			'ExpressJS',
+			'NestJS',
 			'Django',
 			'MongoDB',
 			'Ant Design',
@@ -86,7 +88,7 @@ const profile = {
 			Name: 'Daffodil International University CPC Club',
 			designation: 'Jr. Software Engineer',
 			location: '102/1, Sukrabad Mirpur Rd, Dhaka 1207',
-			title: 'Front-end Developer - (Sept 1, 2020 - Jan 31, 2021)'
+			title: 'Front-end Developer - (Jan 1, 2020 - Jan 31, 2021)'
 		}
 	],
 	projects: [
