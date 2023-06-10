@@ -44,7 +44,7 @@ const profile = {
 		address: 'Meherpur, Bangladesh',
 		email: 'nazmul2018s@gmail.com',
 		phone: '+8801917003822',
-		cvLink: 'https://drive.google.com/file/d/1RwPksyCYdcTo3xFFk2pQbElCpjRu0vDf/view?usp=share_link'
+		cvLink: 'https://drive.google.com/file/d/1zSMGmnVXdzHUE6P---JDSgML6vBJiPGS/view?usp=sharing'
 	},
 	skills: {
 		title: 'Skill',
